@@ -6,6 +6,13 @@ def main():
 def check_year():
 
     a = input("Please type a year ")
+    a = int(a)
+
+    while(a < 0):
+        print("Invalid Year, please try again")
+        a = input("Please type a year ")
+        a = int(a)
+    
 
     b = 69
 
