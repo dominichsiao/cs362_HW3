@@ -5,13 +5,25 @@ def main():
 
 def check_year():
 
-    a = input("Please type a year ")
-    a = int(a)
+    #s
+    #a = input("Please type a year ")
+    #a = int(a)
 
-    while(a < 0):
-        print("Invalid Year, please try again")
-        a = input("Please type a year ")
-        a = int(a)
+    #while(a < 0):
+        #print("Invalid Year, please try again")
+        #a = input("Please type a year ")
+        #a = int(a)
+
+    while True:
+        try:
+            a = int(input("Please type a year "))
+        except ValueError:
+            print("Sorry not a year") 
+            continue
+        if(a < 0):
+            print("sorry not year")
+        else:
+            break   
     
 
     b = 69
